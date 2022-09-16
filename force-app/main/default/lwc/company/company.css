@@ -1,0 +1,18 @@
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description{
+    font-size: 18px;
+    color: grey;
+}
+
+.address{
+    font-size: 18px;
+    color: black;
+}
+
+.buttonClass{
+    margin-top: 10px;
+}

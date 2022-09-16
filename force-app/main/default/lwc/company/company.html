@@ -1,0 +1,42 @@
+<template>
+    <div
+      style="
+        margin-top: 2rem;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        padding: 1rem;
+      "
+    >
+      <lightning-layout>
+        
+        <lightning-layout-item size="8" padding="horizontal-medium">
+          <lightning-layout multiple-rows vertical-align="center">
+            <lightning-layout-item size="12">
+                <p class="slds-text-heading_medium title">
+                    {title}
+                </p>
+            </lightning-layout-item>
+            <lightning-layout-item size="12">
+                <p class="slds-text-heading_medium slds-var-m-top_small description">
+                    {description}
+                </p>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="12">
+                <p class="slds-text-heading_medium slds-var-m-top_small address">
+                    {address}
+                </p>
+            </lightning-layout-item>
+
+          </lightning-layout>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="4">
+            <lightning-button variant="brand" class="buttonClass" label="Show Full Information" 
+                title="Primary action" onclick={handleClick} >
+            </lightning-button>
+        </lightning-layout-item>
+
+      </lightning-layout>
+    </div>
+  </template>

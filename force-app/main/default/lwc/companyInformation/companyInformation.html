@@ -1,0 +1,79 @@
+<template>
+    <template if:true={viewMessage}>
+        <lightning-card variant="narrow" title={storeAllInformation.company_name} icon-name="standard:account">
+            <lightning-layout>
+
+                <lightning-layout-item>
+                    <p class="slds-var-m-left_medium size">
+                        {storeAllInformation.type} number 
+                    </p>
+                </lightning-layout-item>
+                <lightning-layout-item>
+                    <p class="size" style="font-weight: bold;">
+                        &nbsp;{storeAllInformation.company_number}
+                    </p>
+                </lightning-layout-item>
+                
+            </lightning-layout>
+        </br>
+            <lightning-layout>
+                <lightning-layout-item size="12">
+                    <p class="slds-var-m-left_medium size">
+                        {storeAllInformation.type} office address 
+                    </p>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item size="12">
+                    <p class="slds-var-m-left_medium size" style="font-weight: bold;">
+                        {storeAddress.address_line_1},{storeAddress.locality},{storeAddress.region},{storeAddress.postal_code}
+                    </p>
+                </lightning-layout-item>
+            </lightning-layout>
+        </br>
+            <lightning-layout>
+                <lightning-layout-item size="4">
+                    <p class="slds-var-m-left_medium size">
+                        Status
+                    </p>
+                </lightning-layout-item>
+                <lightning-layout-item size="4">
+                    <p class="slds-var-m-left_medium size">
+                        Opened on
+                    </p>
+                </lightning-layout-item>
+                
+            </lightning-layout>
+            <lightning-layout>
+
+                <lightning-layout-item size="4">
+                    <p class="slds-var-m-left_medium size" style="font-weight: bold;">
+                        {storeAllInformation.company_status}
+                    </p>
+                </lightning-layout-item>
+                <lightning-layout-item size="4">
+                    <p class="slds-var-m-left_medium size" style="font-weight: bold;">
+                        {storeAllInformation.date_of_creation}
+                    </p>
+                </lightning-layout-item>
+
+            </lightning-layout>
+        </br>
+            <lightning-layout>
+                <lightning-layout-item>
+                    <p class="slds-var-m-left_medium size">
+                        Company Number
+                    </p>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout>
+                <lightning-layout-item>
+                    <p class="slds-var-m-left_medium size" style="font-weight: bold;">
+                        {storeAllInformation.company_number}
+                    </p>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-card>
+    </template>
+</template>
